@@ -1,4 +1,4 @@
-// hashmaps2.rs
+// hashmap2.rs
 
 // A basket of fruits in the form of a hash map is given. The key
 // represents the name of the fruit and the value represents how many
@@ -9,9 +9,10 @@
 //
 // Make me pass the tests!
 //
-// Execute `rustlings hint hashmaps2` or use the `hint` watch subcommand for a hint.
+// Execute the command `rustlings hint hashmap2` if you need
+// hints.
 
-// I AM NOT DONE
+
 
 use std::collections::HashMap;
 
@@ -37,6 +38,8 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
         // TODO: Put new fruits if not already present. Note that you
         // are not allowed to put any type of fruit that's already
         // present!
+        basket.entry(fruit).or_insert(1);
+
     }
 }
 
